@@ -1,0 +1,10 @@
+--- sound/hda/codecs/conexant.c.orig	2026-01-19 00:57:32.878761188 -0700
++++ sound/hda/codecs/conexant.c	2026-01-19 00:07:09.051128999 -0700
+@@ -1285,6 +1285,7 @@
+  */
+ 
+ static const struct hda_device_id snd_hda_id_conexant[] = {
++	HDA_CODEC_ID(0x14f11f72, "CX8000/CX8050"),
+ 	HDA_CODEC_ID(0x14f11f86, "CX11880"),
+ 	HDA_CODEC_ID(0x14f11f87, "SN6140"),
+ 	HDA_CODEC_ID(0x14f12008, "CX8200"),
