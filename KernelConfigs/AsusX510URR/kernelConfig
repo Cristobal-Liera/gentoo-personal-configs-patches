@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 6.18.41-gentoo Kernel Configuration
+# Linux/x86 6.18.48-gentoo Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (Gentoo 15.3.0 p8) 15.3.0"
 CONFIG_CC_IS_GCC=y
@@ -4976,6 +4976,8 @@ CONFIG_AGP_SIS=y
 CONFIG_AGP_VIA=y
 CONFIG_INTEL_GTT=y
 CONFIG_VGA_SWITCHEROO=y
+CONFIG_GPU_BUDDY=y
+# CONFIG_GPU_BUDDY_KUNIT_TEST is not set
 CONFIG_DRM=y
 
 #
@@ -7461,9 +7463,9 @@ CONFIG_EVM_ATTR_FSUUID=y
 # CONFIG_EVM_LOAD_X509 is not set
 # CONFIG_DEFAULT_SECURITY_SELINUX is not set
 # CONFIG_DEFAULT_SECURITY_TOMOYO is not set
-# CONFIG_DEFAULT_SECURITY_APPARMOR is not set
-CONFIG_DEFAULT_SECURITY_DAC=y
-CONFIG_LSM="landlock,yama,bpf"
+CONFIG_DEFAULT_SECURITY_APPARMOR=y
+# CONFIG_DEFAULT_SECURITY_DAC is not set
+CONFIG_LSM="landlock,yama,bpf,apparmor"
 
 #
 # Kernel hardening options
@@ -8425,6 +8427,5 @@ CONFIG_GENTOO_LINUX_INIT_SCRIPT=y
 CONFIG_GENTOO_LINUX_INIT_SYSTEMD=y
 # end of Support for init systems, system and service managers
 
-# CONFIG_GENTOO_KERNEL_SELF_PROTECTION is not set
 CONFIG_GENTOO_PRINT_FIRMWARE_INFO=y
 # end of Gentoo Linux
